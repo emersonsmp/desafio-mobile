@@ -1,0 +1,13 @@
+C:\desafio-mobile\Marvel\MarvelUITest\bin\Release\NUnit3.TestAdapter.dll
+C:\desafio-mobile\Marvel\MarvelUITest\bin\Release\NUnit3.TestAdapter.pdb
+C:\desafio-mobile\Marvel\MarvelUITest\bin\Release\nunit.engine.dll
+C:\desafio-mobile\Marvel\MarvelUITest\bin\Release\nunit.engine.api.dll
+C:\desafio-mobile\Marvel\MarvelUITest\bin\Release\test-cloud.exe
+C:\desafio-mobile\Marvel\MarvelUITest\bin\Release\MarvelUITest.dll
+C:\desafio-mobile\Marvel\MarvelUITest\bin\Release\nunit.framework.dll
+C:\desafio-mobile\Marvel\MarvelUITest\bin\Release\nunit.framework.pdb
+C:\desafio-mobile\Marvel\MarvelUITest\bin\Release\Xamarin.UITest.dll
+C:\desafio-mobile\Marvel\MarvelUITest\obj\Release\MarvelUITest.csprojAssemblyReference.cache
+C:\desafio-mobile\Marvel\MarvelUITest\obj\Release\MarvelUITest.csproj.CoreCompileInputs.cache
+C:\desafio-mobile\Marvel\MarvelUITest\obj\Release\MarvelUITest.csproj.CopyComplete
+C:\desafio-mobile\Marvel\MarvelUITest\obj\Release\MarvelUITest.dll

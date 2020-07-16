@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "IFrU9xAvKTfSBGQTSNztCgtVGwhrPLeraw5GCjjIzWjHzuafKBclP7V7V5Mqaqx+Ac+WPQuz/r7UghZDwoeL9g==",
+  "success": true,
+  "projectFilePath": "C:\\desafio-mobile\\Marvel\\MarvelUITest\\MarvelUITest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Microsoft\\Xamarin\\NuGet\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\nunit3testadapter\\3.13.0\\nunit3testadapter.3.13.0.nupkg.sha512",
+    "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.uitest\\3.0.8-dev1\\xamarin.uitest.3.0.8-dev1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Marvel.Behavior"
+             xmlns:page="clr-namespace:Marvel.View"
+             mc:Ignorable="d"
+             x:Class="Marvel.View.MainPageView"
+             Title="Marvel Heroes">
+    <ContentPage.Content>
+        <StackLayout x:Name="Stack" BackgroundColor="IndianRed">
+            <!--BARRA DE BUSCA -->
+            <Frame Margin="6,5,6,5" Padding="0" OutlineColor="DarkGray" HasShadow="True" HorizontalOptions="FillAndExpand"  VerticalOptions="Center">
+                <SearchBar x:Name="SearchBar" AutomationId="SearchBar" Placeholder="Pesquisar item" PlaceholderColor="LightGray" TextColor="#000000" HorizontalOptions="FillAndExpand" VerticalOptions="Center"
+                           Text="{Binding SearchText}"
+                           SearchCommand="{Binding SearchCommand}" 
+                           SearchCommandParameter="{Binding Text, Source={x:Reference SearchBar}}">
+                    <SearchBar.Behaviors>
+                        <local:TextChangedBehavior />
+                    </SearchBar.Behaviors>
+                </SearchBar>
+            </Frame>
+
+            <StackLayout IsVisible="{Binding HerosListIsNull}" HorizontalOptions="CenterAndExpand">
+                <Image Source="NotFound.png" HeightRequest="200"/>
+                <Label Text="Hulk não encontrar heroi" FontSize="25"/>
+            </StackLayout>
+
+
+            <ListView x:Name="ListaDeHeroes" ItemsSource="{Binding ListaDeHeroes}" RowHeight="100" IsVisible="{Binding ListViewIsVisible}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame Padding="5,2,5,2">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer 
+                                        Command="{Binding Path=BindingContext.MoreCharacterInfoComand, Source={x:Reference ListaDeHeroes}}" 
+                                        CommandParameter="{Binding .}"/>
+                                </Frame.GestureRecognizers>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50*"/>
+                                        <ColumnDefinition Width="50*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image x:Name="HeroImage" Grid.Column="0" Aspect="AspectFill">
+                                        <Image.Source>
+                                            <UriImageSource Uri="{Binding thumbnail.path, StringFormat='{0}.jpg'}" 
+			                             CacheValidity="14" 
+			                             CachingEnabled="true"/>
+                                        </Image.Source>
+                                    </Image>
+
+                                    <ActivityIndicator Color="Red" Scale="0.5" BindingContext="{x:Reference HeroImage}" IsRunning="{Binding IsLoading}"/>
+
+                                    <Label Grid.Column="1" Text="{Binding name}" HorizontalOptions="Center" VerticalOptions="Center" TextColor="IndianRed"/>
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

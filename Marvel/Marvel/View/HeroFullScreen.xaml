@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Marvel.View.HeroFullScreen">
+    <ScrollView>
+        <AbsoluteLayout>
+
+            <!-- (x,y) = Ancora, AbsoluteLayout.LayoutBounds="X, Y, Width, Height" 
+            https://docs.microsoft.com/pt-br/xamarin/xamarin-forms/user-interface/layouts/absolute-layout
+            -->
+            <StackLayout 
+				BackgroundColor="Black"
+				VerticalOptions="FillAndExpand" 
+				HorizontalOptions="FillAndExpand"
+				AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+				AbsoluteLayout.LayoutFlags="All"
+            >
+
+                <Image 
+					x:Name="img" 
+					HorizontalOptions="FillAndExpand" 
+					VerticalOptions="FillAndExpand" 
+					Scale="2"
+					Source="product_item_0.jpg"
+				/>
+
+            </StackLayout>
+
+            <!--CLOSE ICON-->
+            <StackLayout 
+				Padding="20"
+				HorizontalOptions="End"
+				VerticalOptions="Start"
+				AbsoluteLayout.LayoutBounds="0, 0, 1, .1"
+				AbsoluteLayout.LayoutFlags="All"  >
+
+                <Label
+					FontSize="30"
+					Text="X"
+					HorizontalTextAlignment="End"
+					VerticalTextAlignment="Center"
+					TextColor="White"
+					HeightRequest="40"
+					WidthRequest="30">
+
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCloseButtonClicked" />
+                    </Label.GestureRecognizers>
+
+                </Label>
+                
+            </StackLayout>
+        </AbsoluteLayout>
+    </ScrollView>
+</ContentPage>

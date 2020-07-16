@@ -1,0 +1,17 @@
+C:\desafio-mobile\Marvel\Marvel\bin\Debug\netstandard2.0\Marvel.deps.json
+C:\desafio-mobile\Marvel\Marvel\bin\Debug\netstandard2.0\Marvel.dll
+C:\desafio-mobile\Marvel\Marvel\obj\Debug\netstandard2.0\Marvel.AssemblyInfoInputs.cache
+C:\desafio-mobile\Marvel\Marvel\obj\Debug\netstandard2.0\Marvel.AssemblyInfo.cs
+C:\desafio-mobile\Marvel\Marvel\bin\Debug\netstandard2.0\ref\Marvel.dll
+C:\desafio-mobile\Marvel\Marvel\bin\Debug\netstandard2.0\Marvel.pdb
+C:\desafio-mobile\Marvel\Marvel\obj\Debug\netstandard2.0\Marvel.csprojAssemblyReference.cache
+C:\desafio-mobile\Marvel\Marvel\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\desafio-mobile\Marvel\Marvel\obj\Debug\netstandard2.0\View\HeroFullScreen.xaml.g.cs
+C:\desafio-mobile\Marvel\Marvel\obj\Debug\netstandard2.0\View\MainPageView.xaml.g.cs
+C:\desafio-mobile\Marvel\Marvel\obj\Debug\netstandard2.0\View\MoreInfoView.xaml.g.cs
+C:\desafio-mobile\Marvel\Marvel\obj\Debug\netstandard2.0\View\SplashPage.xaml.g.cs
+C:\desafio-mobile\Marvel\Marvel\obj\Debug\netstandard2.0\Marvel.csproj.CoreCompileInputs.cache
+C:\desafio-mobile\Marvel\Marvel\obj\Debug\netstandard2.0\XamlC.stamp
+C:\desafio-mobile\Marvel\Marvel\obj\Debug\netstandard2.0\Marvel.dll
+C:\desafio-mobile\Marvel\Marvel\obj\Debug\netstandard2.0\ref\Marvel.dll
+C:\desafio-mobile\Marvel\Marvel\obj\Debug\netstandard2.0\Marvel.pdb

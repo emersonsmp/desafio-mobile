@@ -69,7 +69,12 @@ namespace Marvel.ViewModel
             var hashService = DependencyService.Get<IHashService>();
             _dataService = new MarvelDataService(hashService);
 
-           Task.Run(LoadComics);
+            var current = Connectivity.NetworkAccess;
+
+            if (current == NetworkAccess.Internet)
+                Task.Run(LoadComics);
+            else App.Current.MainPage.DisplayAlert("Atenção","Verifique sua conexão","OK");
+
         }
 
 

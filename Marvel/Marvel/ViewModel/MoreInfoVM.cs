@@ -8,7 +8,7 @@ using Marvel.Model;
 
 namespace Marvel.ViewModel
 {
-    public class MoreInfoVM : INotifyPropertyChanged
+    public class MoreInfoVM
     {
         public Result _character { get; set; }
         public bool IsBusy { get; set; }
@@ -45,16 +45,6 @@ namespace Marvel.ViewModel
             finally
             {
                 IsBusy = false;
-            }
-        }
-
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void OnPropertyChanged(string NameProperty)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(NameProperty));
             }
         }
     }

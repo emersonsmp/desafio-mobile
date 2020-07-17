@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Marvel.Model;
 using Marvel.Service;
 using Xamarin.Forms;
+using Xamarin.Essentials;
 using Marvel.View;
 using System.Linq;
 
@@ -14,19 +15,20 @@ namespace Marvel.ViewModel
 {
     public class MainPageVM : INotifyPropertyChanged
     {
+        #region Atributes
+        readonly IMarvelDataService _dataService;
+
         private string _searchText;
         public string searchText
         {
             get { return _searchText; }
             set { if (_searchText != value) { _searchText = value; OnPropertyChanged("searchText"); } }
         }
-
-        readonly IMarvelDataService _dataService;
+       
         public bool IsBusy { get; set; }
         Characters characters { get; set; }
 
         public ObservableCollection<Result> Lista { get; set; }
-
         public ObservableCollection<Result> _ListaDeHeroes { get; set; }
         public ObservableCollection<Result> ListaDeHeroes
         {
@@ -36,7 +38,9 @@ namespace Marvel.ViewModel
                 _ListaDeHeroes = value; OnPropertyChanged("ProdutosAtivosDoMercado");
             }
         }
+        #endregion
 
+        #region IsVible attributes
         public bool _HerosListIsNull { get; set; }
         public bool HerosListIsNull
         {
@@ -56,6 +60,7 @@ namespace Marvel.ViewModel
                 _ListViewIsVisible = value; OnPropertyChanged("ListViewIsVisible");
             }
         }
+        #endregion
 
         public MainPageVM()
         {
@@ -64,8 +69,9 @@ namespace Marvel.ViewModel
             var hashService = DependencyService.Get<IHashService>();
             _dataService = new MarvelDataService(hashService);
 
-            Task.Run(LoadComics);
+           Task.Run(LoadComics);
         }
+
 
         public Command MoreCharacterInfoComand => new Command<object>((object obj) =>
         {
@@ -106,6 +112,7 @@ namespace Marvel.ViewModel
         });
         #endregion
 
+        #region LOAD DATA
         async Task LoadComics()
         {
             //Characters characters;
@@ -135,6 +142,7 @@ namespace Marvel.ViewModel
                 IsBusy = false;
             }
         }
+        #endregion
 
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string NameProperty)

@@ -51,7 +51,6 @@ C:\desafio-mobile\Marvel\Marvel.Android\obj\Release\90\res\layout\tabbar.xml
 C:\desafio-mobile\Marvel\Marvel.Android\obj\Release\90\res\layout\toolbar.xml
 C:\desafio-mobile\Marvel\Marvel.Android\obj\Release\90\res\values\styles.xml
 C:\desafio-mobile\Marvel\Marvel.Android\obj\Release\90\res\values\colors.xml
-C:\desafio-mobile\Marvel\Marvel.Android\obj\Release\90\res\mipmap-anydpi-v26\icon.xml
 C:\desafio-mobile\Marvel\Marvel.Android\obj\Release\90\res\mipmap-anydpi-v26\icon_round.xml
 C:\desafio-mobile\Marvel\Marvel.Android\obj\Release\90\res\mipmap-hdpi\icon.png
 C:\desafio-mobile\Marvel\Marvel.Android\obj\Release\90\res\mipmap-hdpi\launcher_foreground.png
@@ -419,3 +418,10 @@ C:\desafio-mobile\Marvel\Marvel.Android\obj\Release\90\android\src\crc643f46942d
 C:\desafio-mobile\Marvel\Marvel.Android\obj\Release\90\android\src\crc643f46942d9dd1fff9\ShapeRenderer_2.java
 C:\desafio-mobile\Marvel\Marvel.Android\obj\Release\90\android\src\crc643f46942d9dd1fff9\ShapeView.java
 C:\desafio-mobile\Marvel\Marvel.Android\obj\Release\90\android\src\crc643f46942d9dd1fff9\ViewCellRenderer_ViewCellContainer_TapGestureListener.java
+C:\desafio-mobile\Marvel\Marvel.Android\obj\Release\90\res\mipmap-anydpi-v26\icon.xml.old
+C:\desafio-mobile\Marvel\Marvel.Android\obj\Release\90\res\mipmap-hdpi\icon.png.old
+C:\desafio-mobile\Marvel\Marvel.Android\obj\Release\90\res\mipmap-mdpi\icon.png.old
+C:\desafio-mobile\Marvel\Marvel.Android\obj\Release\90\res\mipmap-xhdpi\icon.png.old
+C:\desafio-mobile\Marvel\Marvel.Android\obj\Release\90\res\mipmap-xxhdpi\icon.png.old
+C:\desafio-mobile\Marvel\Marvel.Android\obj\Release\90\res\mipmap-xxxhdpi\icon.png.old
+C:\desafio-mobile\Marvel\Marvel.Android\obj\Release\90\res\drawable\icon.png

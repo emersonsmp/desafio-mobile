@@ -1,15 +1,15 @@
 	.section	.rodata.module0_managed_to_java,"a",@progbits
 	.type	module0_managed_to_java, @object
 module0_managed_to_java:
-	.word	33554434
-	.word	719
+	.word	33554448
+	.word	718
 	.size	module0_managed_to_java, 8
 
 	.section	.rodata.module1_managed_to_java,"a",@progbits
 	.type	module1_managed_to_java, @object
 module1_managed_to_java:
-	.word	33554448
-	.word	718
+	.word	33554434
+	.word	719
 	.size	module1_managed_to_java, 8
 
 	.section	.rodata.module2_managed_to_java,"a",@progbits

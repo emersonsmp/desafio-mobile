@@ -10,9 +10,19 @@
              Title="Marvel Heroes">
     <ContentPage.Content>
         <StackLayout x:Name="Stack" BackgroundColor="IndianRed">
+            
+            <Frame Margin="6,5,6,5" Padding="0" 
+                   OutlineColor="DarkGray" 
+                   HasShadow="True" HorizontalOptions="FillAndExpand"  
+                   VerticalOptions="Center">
 
-            <Frame Margin="6,5,6,5" Padding="0" OutlineColor="DarkGray" HasShadow="True" HorizontalOptions="FillAndExpand"  VerticalOptions="Center">
-                <SearchBar x:Name="SearchBar" AutomationId="SearchBar" Placeholder="Pesquisar item" PlaceholderColor="LightGray" TextColor="#000000" HorizontalOptions="FillAndExpand" VerticalOptions="Center"
+                <SearchBar x:Name="SearchBar" 
+                           AutomationId="SearchBar" 
+                           Placeholder="Pesquisar item" 
+                           PlaceholderColor="LightGray" 
+                           TextColor="#000000" 
+                           HorizontalOptions="FillAndExpand" 
+                           VerticalOptions="Center"
                            Text="{Binding SearchText}"
                            SearchCommand="{Binding SearchCommand}" 
                            SearchCommandParameter="{Binding Text, Source={x:Reference SearchBar}}">
@@ -22,9 +32,20 @@
                 </SearchBar>
             </Frame>
 
+            <ActivityIndicator Grid.Row="1" x:Name="waitActivityIndicator"
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="CenterAndExpand"
+                                       Color="#ED1D24" IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}">
+            </ActivityIndicator>
+
             <StackLayout IsVisible="{Binding HerosListIsNull}" HorizontalOptions="CenterAndExpand">
                 <Image Source="NotFound.png" HeightRequest="200"/>
                 <Label Text="Hulk não encontrar heroi" FontSize="25"/>
+            </StackLayout>
+
+            <StackLayout IsVisible="{Binding NoConnection}" HorizontalOptions="CenterAndExpand">
+                <Label Text="Você parece estar Offline" FontSize="25"/>
+                <Button Text="Refresh" Command="{RefreshListOfHerosCommand}" />
             </StackLayout>
 
 

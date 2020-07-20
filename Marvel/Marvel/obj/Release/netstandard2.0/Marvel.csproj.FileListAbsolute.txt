@@ -15,3 +15,4 @@ C:\desafio-mobile\Marvel\Marvel\obj\Release\netstandard2.0\Marvel.csproj.CoreCom
 C:\desafio-mobile\Marvel\Marvel\obj\Release\netstandard2.0\XamlC.stamp
 C:\desafio-mobile\Marvel\Marvel\obj\Release\netstandard2.0\View\HeroFullScreen.xaml.g.cs
 C:\desafio-mobile\Marvel\Marvel\obj\Release\netstandard2.0\View\MoreInfoView.xaml.g.cs
+C:\desafio-mobile\Marvel\Marvel\obj\Release\netstandard2.0\View\TesteView.xaml.g.cs

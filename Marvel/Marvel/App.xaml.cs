@@ -11,6 +11,7 @@ namespace Marvel
         {
             InitializeComponent();
             MainPage = new NavigationPage(new SplashPage());
+            //MainPage = new NavigationPage(new TesteView());
         }
 
         protected override void OnStart()

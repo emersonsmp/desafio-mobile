@@ -14,10 +14,26 @@ namespace Marvel.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPageView : ContentPage
     {
+        MainPageVM viewmodel;
         public MainPageView()
         {
             InitializeComponent();
-            BindingContext = new MainPageVM();
+
+            var hashService = DependencyService.Get<IHashService>();
+            MarvelDataService _dataService = new MarvelDataService(hashService);
+
+            BindingContext = viewmodel = new MainPageVM(_dataService);
+        }
+
+        protected override async void OnAppearing()
+        {
+            //viewmodel.SubscribeChangeLanguage();
+            //wait viewModel.GetAll();
+        }
+
+        protected  override  void  OnDisappearing()
+        {
+            //viewmodel.OnDisappearing();
         }
     }
 }

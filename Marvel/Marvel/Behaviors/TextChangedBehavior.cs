@@ -21,7 +21,9 @@ namespace Marvel.Behavior
 
         private void Bindable_TextChanged(object sender, TextChangedEventArgs e)
         {
-            ((Xamarin.Forms.SearchBar)sender).SearchCommand?.Execute(e.NewTextValue);
+
+            if (e.NewTextValue.Length >= 3 || e.NewTextValue.Length == 0)
+                ((Xamarin.Forms.SearchBar)sender).SearchCommand?.Execute(e.NewTextValue);
         }
     }
 }

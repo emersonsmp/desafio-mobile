@@ -13,68 +13,22 @@ using System.Linq;
 
 namespace Marvel.ViewModel
 {
-    public class MainPageVM : INotifyPropertyChanged
+    public class MainPageVM : BaseVM
     {
-        #region Atributes
+
         readonly IMarvelDataService _dataService;
-
-        private string _searchText;
-        public string searchText
-        {
-            get { return _searchText; }
-            set { if (_searchText != value) { _searchText = value; OnPropertyChanged("searchText"); } }
-        }
-       
-        public bool IsBusy { get; set; }
         Characters characters { get; set; }
-
         public ObservableCollection<Result> Lista { get; set; }
-        public ObservableCollection<Result> _ListaDeHeroes { get; set; }
-        public ObservableCollection<Result> ListaDeHeroes
-        {
-            get { return _ListaDeHeroes; }
-            set
-            {
-                _ListaDeHeroes = value; OnPropertyChanged("ProdutosAtivosDoMercado");
-            }
-        }
-        #endregion
+        public Command RefreshListOfHerosCommand  { get; set; }
 
-        #region IsVible attributes
-        public bool _HerosListIsNull { get; set; }
-        public bool HerosListIsNull
-        {
-            get { return _HerosListIsNull; }
-            set
-            {
-                _HerosListIsNull = value; OnPropertyChanged("HerosListIsNull");
-            }
-        }
 
-        public bool _ListViewIsVisible { get; set; }
-        public bool ListViewIsVisible
-        {
-            get { return _ListViewIsVisible; }
-            set
-            {
-                _ListViewIsVisible = value; OnPropertyChanged("ListViewIsVisible");
-            }
-        }
-        #endregion
-
-        public MainPageVM()
-        {
+        public MainPageVM(MarvelDataService dataservice)
+        {          
+            _dataService = dataservice;
             Lista = new ObservableCollection<Result>();
             ListaDeHeroes = new ObservableCollection<Result>();
-            var hashService = DependencyService.Get<IHashService>();
-            _dataService = new MarvelDataService(hashService);
-
-            var current = Connectivity.NetworkAccess;
-
-            if (current == NetworkAccess.Internet)
-                Task.Run(LoadComics);
-            else App.Current.MainPage.DisplayAlert("Atenção","Verifique sua conexão","OK");
-
+            RefreshListOfHerosCommand = new Command(RefreshListOfHerosExecute);
+            Task.Run(LoadComics);
         }
 
 
@@ -85,77 +39,65 @@ namespace Marvel.ViewModel
 
         });
 
-        #region METODO DE BUSCA
         public Command SearchCommand => new Command<string>((text) =>
         {
-            if (text.Length >= 3)
+            ListaDeHeroes.Clear();
+            var CharactersFound = Lista.Where(c => c.name.ToLower().StartsWith(text.ToLower())).ToList();
+
+            if (CharactersFound.Count == 0)
             {
-                ListaDeHeroes.Clear();
-                var suggestions = Lista.Where(c => c.name.ToLower().StartsWith(text.ToLower())).ToList();
-
-                foreach (var recipe in suggestions)
-                    ListaDeHeroes.Add(recipe);
-
-                if (suggestions.Count == 0)
-                {
-                    HerosListIsNull = true;
-                    ListViewIsVisible = false;
-                }
+                HerosListIsNull = true;
+                ListViewIsVisible = false;
             }
             else
             {
-                ListaDeHeroes.Clear();
-                for (int i = 0; i < Lista.Count; i++)
-                {
-                    ListaDeHeroes.Add(Lista[i]);
-                }
-
                 HerosListIsNull = false;
                 ListViewIsVisible = true;
+
+                foreach (var recipe in CharactersFound)
+                    ListaDeHeroes.Add(recipe);
             }
 
         });
-        #endregion
 
-        #region LOAD DATA
         async Task LoadComics()
         {
-            //Characters characters;
 
-            if (IsBusy)
-                return;
+            if (IsBusy) return;
 
             IsBusy = true;
 
             try
             {
-                characters = await _dataService.GetCharacters();
+                if (InternetConnectivity()) {
+                    characters = await _dataService.GetCharacters();
+                    Lista = new ObservableCollection<Result>((IEnumerable<Result>)characters.data.results);
 
-                //List<Result>Lista = new List<Result>((IEnumerable<Result>)characters.data.results);
-                Lista = new ObservableCollection<Result>((IEnumerable<Result>)characters.data.results);
+                    for (int i = 0; i < Lista.Count; i++)
+                    {
+                        ListaDeHeroes.Add(Lista[i]);
+                    }
 
-                for (int i = 0; i < Lista.Count; i++)
-                {
-                    ListaDeHeroes.Add(Lista[i]);
+                    ListViewIsVisible = true ;
+                    HerosListIsNull   = false;
                 }
-
-                ListViewIsVisible = true;
-                HerosListIsNull = false;
+                else
+                {
+                    NoConnection = true;
+                    await App.Current.MainPage.DisplayAlert("Atenção", "Verifique sua conexão", "OK");
+                    //Navigation.PushPopupAsync(new InternetOffLinePage());
+                }
+                
             }
             finally
             {
                 IsBusy = false;
             }
         }
-        #endregion
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void OnPropertyChanged(string NameProperty)
+        public void RefreshListOfHerosExecute()
         {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(NameProperty));
-            }
+
         }
     }
 }

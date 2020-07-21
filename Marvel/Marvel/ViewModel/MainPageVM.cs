@@ -10,6 +10,7 @@ using Xamarin.Forms;
 using Xamarin.Essentials;
 using Marvel.View;
 using System.Linq;
+using Rg.Plugins.Popup.Extensions;
 
 namespace Marvel.ViewModel
 {
@@ -23,7 +24,11 @@ namespace Marvel.ViewModel
 
 
         public MainPageVM(MarvelDataService dataservice)
-        {          
+        {
+
+            /*if (!InternetConnectivity())
+                Navigation.PushPopupAsync(new InternetOfflinePage());*/
+
             _dataService = dataservice;
             Lista = new ObservableCollection<Result>();
             ListaDeHeroes = new ObservableCollection<Result>();
@@ -83,9 +88,9 @@ namespace Marvel.ViewModel
                 }
                 else
                 {
-                    NoConnection = true;
-                    await App.Current.MainPage.DisplayAlert("Atenção", "Verifique sua conexão", "OK");
-                    //Navigation.PushPopupAsync(new InternetOffLinePage());
+                    //NoConnection = true;
+                    //await App.Current.MainPage.DisplayAlert("Atenção", "Verifique sua conexão", "OK");
+                    await Navigation.PushPopupAsync(new InternetOfflinePage());
                 }
                 
             }

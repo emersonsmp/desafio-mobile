@@ -45,7 +45,7 @@
 
             <StackLayout IsVisible="{Binding NoConnection}" HorizontalOptions="CenterAndExpand">
                 <Label Text="Você parece estar Offline" FontSize="25"/>
-                <Button Text="Refresh" Command="{RefreshListOfHerosCommand}" />
+                <Button Text="Refresh" Command="{ Binding RefreshListOfHerosCommand}" />
             </StackLayout>
 
 

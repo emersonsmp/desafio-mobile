@@ -11,6 +11,38 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Plugin.Multilingual/1.1.6-beta": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.dll": {},
+          "lib/MonoAndroid10/Plugin.Multilingual.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.dll": {},
+          "lib/MonoAndroid10/Plugin.Multilingual.dll": {}
+        }
+      },
+      "Rg.Plugins.Popup/2.0.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.5.0.530"
+        },
+        "compile": {
+          "lib/monoandroid90/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Rg.Plugins.Popup.dll": {}
+        }
+      },
+      "System.ComponentModel/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/MonoAndroid10/_._": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/_._": {}
+        }
+      },
       "Xamarin.Android.Arch.Core.Common/1.1.1.3": {
         "type": "package",
         "dependencies": {
@@ -793,13 +825,32 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.PancakeView/2.0.1.698": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel": "4.3.0",
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Forms.PancakeView.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Forms.PancakeView.dll": {}
+        }
+      },
       "Marvel/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
+          "Plugin.Multilingual": "1.1.6-beta",
+          "Rg.Plugins.Popup": "2.0.0.3",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1143-pre1"
+          "Xamarin.Forms": "4.8.0.1143-pre1",
+          "Xamarin.Forms.PancakeView": "2.0.1.698"
         },
         "compile": {
           "bin/placeholder/Marvel.dll": {}
@@ -840,6 +891,168 @@
         "newtonsoft.json.12.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "Plugin.Multilingual/1.1.6-beta": {
+      "sha512": "wYAkxNEGklTvEr7ee4YNQ+43pVM3FwpOd/PdCR0dmwWj4k/m7vwdRm+SPmUyDNSDXxaXwRDFqL8LWKuHnNsx+A==",
+      "type": "package",
+      "path": "plugin.multilingual/1.1.6-beta",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/netstandard1.0/Helpers/TranslateExtension.txt.pp",
+        "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Multilingual.XML",
+        "lib/MonoAndroid10/Plugin.Multilingual.dll",
+        "lib/MonoAndroid10/Plugin.Multilingual.pdb",
+        "lib/UAP10/Plugin.Multilingual.Abstractions.dll",
+        "lib/UAP10/Plugin.Multilingual.Abstractions.pdb",
+        "lib/UAP10/Plugin.Multilingual.Abstractions.xml",
+        "lib/UAP10/Plugin.Multilingual.XML",
+        "lib/UAP10/Plugin.Multilingual.dll",
+        "lib/UAP10/Plugin.Multilingual.pdb",
+        "lib/UAP10/Plugin.Multilingual.pri",
+        "lib/Xamarin.Mac20/Plugin.Multilingual.Abstractions.dll",
+        "lib/Xamarin.Mac20/Plugin.Multilingual.Abstractions.pdb",
+        "lib/Xamarin.Mac20/Plugin.Multilingual.Abstractions.xml",
+        "lib/Xamarin.Mac20/Plugin.Multilingual.dll",
+        "lib/Xamarin.iOS10/Plugin.Multilingual.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Multilingual.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Multilingual.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Multilingual.XML",
+        "lib/Xamarin.iOS10/Plugin.Multilingual.dll",
+        "lib/XamarinTVOS/Plugin.Multilingual.Abstractions.dll",
+        "lib/XamarinTVOS/Plugin.Multilingual.Abstractions.pdb",
+        "lib/XamarinTVOS/Plugin.Multilingual.Abstractions.xml",
+        "lib/XamarinTVOS/Plugin.Multilingual.dll",
+        "lib/XamarinTVOS/Plugin.Multilingual.pdb",
+        "lib/XamarinWatchOS/Plugin.Multilingual.Abstractions.dll",
+        "lib/XamarinWatchOS/Plugin.Multilingual.Abstractions.pdb",
+        "lib/XamarinWatchOS/Plugin.Multilingual.Abstractions.xml",
+        "lib/XamarinWatchOS/Plugin.Multilingual.dll",
+        "lib/XamarinWatchOS/Plugin.Multilingual.pdb",
+        "lib/net45/Plugin.Multilingual.Abstractions.dll",
+        "lib/net45/Plugin.Multilingual.Abstractions.pdb",
+        "lib/net45/Plugin.Multilingual.Abstractions.xml",
+        "lib/net45/Plugin.Multilingual.dll",
+        "lib/net45/Plugin.Multilingual.pdb",
+        "lib/netstandard1.0/Plugin.Multilingual.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.Multilingual.Abstractions.pdb",
+        "lib/netstandard1.0/Plugin.Multilingual.Abstractions.xml",
+        "lib/netstandard1.0/Plugin.Multilingual.deps.json",
+        "lib/netstandard1.0/Plugin.Multilingual.dll",
+        "lib/netstandard1.0/Plugin.Multilingual.xml",
+        "plugin.multilingual.1.1.6-beta.nupkg.sha512",
+        "plugin.multilingual.nuspec"
+      ]
+    },
+    "Rg.Plugins.Popup/2.0.0.3": {
+      "sha512": "/lrKxxsdaF9T+YEnVDaUMj0angdRyvpngSmX8veY/QYhSjT4x3guJTsL8O8D4egDf7MI5McnmMAsst0tkN1LOA==",
+      "type": "package",
+      "path": "rg.plugins.popup/2.0.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "icon.png",
+        "lib/monoandroid10.0/Rg.Plugins.Popup.dll",
+        "lib/monoandroid10.0/Rg.Plugins.Popup.pdb",
+        "lib/monoandroid10.0/Rg.Plugins.Popup.xml",
+        "lib/monoandroid90/Rg.Plugins.Popup.dll",
+        "lib/monoandroid90/Rg.Plugins.Popup.pdb",
+        "lib/monoandroid90/Rg.Plugins.Popup.xml",
+        "lib/net472/Rg.Plugins.Popup.dll",
+        "lib/net472/Rg.Plugins.Popup.pdb",
+        "lib/net472/Rg.Plugins.Popup.xml",
+        "lib/netcoreapp3.1/Rg.Plugins.Popup.dll",
+        "lib/netcoreapp3.1/Rg.Plugins.Popup.pdb",
+        "lib/netcoreapp3.1/Rg.Plugins.Popup.xml",
+        "lib/netstandard2.0/Rg.Plugins.Popup.dll",
+        "lib/netstandard2.0/Rg.Plugins.Popup.pdb",
+        "lib/netstandard2.0/Rg.Plugins.Popup.xml",
+        "lib/tizen40/Rg.Plugins.Popup.dll",
+        "lib/tizen40/Rg.Plugins.Popup.pdb",
+        "lib/tizen40/Rg.Plugins.Popup.xml",
+        "lib/uap10.0.17763/Rg.Plugins.Popup.dll",
+        "lib/uap10.0.17763/Rg.Plugins.Popup.pdb",
+        "lib/uap10.0.17763/Rg.Plugins.Popup.pri",
+        "lib/uap10.0.17763/Rg.Plugins.Popup.xml",
+        "lib/xamarinios10/Rg.Plugins.Popup.dll",
+        "lib/xamarinios10/Rg.Plugins.Popup.pdb",
+        "lib/xamarinios10/Rg.Plugins.Popup.xml",
+        "lib/xamarinmac20/Rg.Plugins.Popup.dll",
+        "lib/xamarinmac20/Rg.Plugins.Popup.pdb",
+        "lib/xamarinmac20/Rg.Plugins.Popup.xml",
+        "lib/xamarintvos10/Rg.Plugins.Popup.dll",
+        "lib/xamarintvos10/Rg.Plugins.Popup.pdb",
+        "lib/xamarintvos10/Rg.Plugins.Popup.xml",
+        "lib/xamarinwatchos10/Rg.Plugins.Popup.dll",
+        "lib/xamarinwatchos10/Rg.Plugins.Popup.pdb",
+        "lib/xamarinwatchos10/Rg.Plugins.Popup.xml",
+        "readme.txt",
+        "rg.plugins.popup.2.0.0.3.nupkg.sha512",
+        "rg.plugins.popup.nuspec"
+      ]
+    },
+    "System.ComponentModel/4.3.0": {
+      "sha512": "VyGn1jGRZVfxnh8EdvDCi71v3bMXrsu8aYJOwoV7SNDLVhiEqwP86pPMyRGsDsxhXAm2b3o9OIqeETfN5qfezw==",
+      "type": "package",
+      "path": "system.componentmodel/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.ComponentModel.dll",
+        "lib/netstandard1.3/System.ComponentModel.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.ComponentModel.dll",
+        "ref/netcore50/System.ComponentModel.xml",
+        "ref/netcore50/de/System.ComponentModel.xml",
+        "ref/netcore50/es/System.ComponentModel.xml",
+        "ref/netcore50/fr/System.ComponentModel.xml",
+        "ref/netcore50/it/System.ComponentModel.xml",
+        "ref/netcore50/ja/System.ComponentModel.xml",
+        "ref/netcore50/ko/System.ComponentModel.xml",
+        "ref/netcore50/ru/System.ComponentModel.xml",
+        "ref/netcore50/zh-hans/System.ComponentModel.xml",
+        "ref/netcore50/zh-hant/System.ComponentModel.xml",
+        "ref/netstandard1.0/System.ComponentModel.dll",
+        "ref/netstandard1.0/System.ComponentModel.xml",
+        "ref/netstandard1.0/de/System.ComponentModel.xml",
+        "ref/netstandard1.0/es/System.ComponentModel.xml",
+        "ref/netstandard1.0/fr/System.ComponentModel.xml",
+        "ref/netstandard1.0/it/System.ComponentModel.xml",
+        "ref/netstandard1.0/ja/System.ComponentModel.xml",
+        "ref/netstandard1.0/ko/System.ComponentModel.xml",
+        "ref/netstandard1.0/ru/System.ComponentModel.xml",
+        "ref/netstandard1.0/zh-hans/System.ComponentModel.xml",
+        "ref/netstandard1.0/zh-hant/System.ComponentModel.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.componentmodel.4.3.0.nupkg.sha512",
+        "system.componentmodel.nuspec"
       ]
     },
     "Xamarin.Android.Arch.Core.Common/1.1.1.3": {
@@ -1958,6 +2171,24 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.PancakeView/2.0.1.698": {
+      "sha512": "wjem1ckhesY3UoD+rEpg6mysRG85RcO7hrXcFWpq2fKyTL4YKuH8GTmaaL87q/lyhvk0GCRoJFLgYcOJWsUk5w==",
+      "type": "package",
+      "path": "xamarin.forms.pancakeview/2.0.1.698",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid90/Xamarin.Forms.PancakeView.dll",
+        "lib/net461/Xamarin.Forms.PancakeView.dll",
+        "lib/netstandard1.0/Xamarin.Forms.PancakeView.dll",
+        "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.PancakeView.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.PancakeView.pri",
+        "lib/xamarinios10/Xamarin.Forms.PancakeView.dll",
+        "xamarin.forms.pancakeview.2.0.1.698.nupkg.sha512",
+        "xamarin.forms.pancakeview.nuspec"
+      ]
+    },
     "Marvel/1.0.0": {
       "type": "project",
       "path": "../Marvel/Marvel.csproj",
@@ -1967,8 +2198,11 @@
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
       "Marvel >= 1.0.0",
+      "Plugin.Multilingual >= 1.1.6-beta",
+      "Rg.Plugins.Popup >= 2.0.0.3",
       "Xamarin.Essentials >= 1.5.3.2",
-      "Xamarin.Forms >= 4.8.0.1143-pre1"
+      "Xamarin.Forms >= 4.8.0.1143-pre1",
+      "Xamarin.Forms.PancakeView >= 2.0.1.698"
     ]
   },
   "packageFolders": {
@@ -2013,6 +2247,14 @@
     "frameworks": {
       "monoandroid90": {
         "dependencies": {
+          "Plugin.Multilingual": {
+            "target": "Package",
+            "version": "[1.1.6-beta, )"
+          },
+          "Rg.Plugins.Popup": {
+            "target": "Package",
+            "version": "[2.0.0.3, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.5.3.2, )"
@@ -2020,6 +2262,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[4.8.0.1143-pre1, )"
+          },
+          "Xamarin.Forms.PancakeView": {
+            "target": "Package",
+            "version": "[2.0.1.698, )"
           }
         }
       }

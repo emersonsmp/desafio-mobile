@@ -1,6 +1,8 @@
 C:\desafio-mobile\Marvel\Marvel.iOS\bin\iPhone\Debug\Marvel.iOS.exe
 C:\desafio-mobile\Marvel\Marvel.iOS\bin\iPhone\Debug\Marvel.iOS.pdb
 C:\desafio-mobile\Marvel\Marvel.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
+C:\desafio-mobile\Marvel\Marvel.iOS\bin\iPhone\Debug\Rg.Plugins.Popup.dll
+C:\desafio-mobile\Marvel\Marvel.iOS\bin\iPhone\Debug\Rg.Plugins.Popup.pdb
 C:\desafio-mobile\Marvel\Marvel.iOS\bin\iPhone\Debug\Xamarin.Essentials.dll
 C:\desafio-mobile\Marvel\Marvel.iOS\bin\iPhone\Debug\Xamarin.Essentials.pdb
 C:\desafio-mobile\Marvel\Marvel.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll

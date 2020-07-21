@@ -1,11 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "IFrU9xAvKTfSBGQTSNztCgtVGwhrPLeraw5GCjjIzWjHzuafKBclP7V7V5Mqaqx+Ac+WPQuz/r7UghZDwoeL9g==",
+  "dgSpecHash": "xWb0SEFLu+Dx2fmZyQcCtBaF8+zXBk6BVAN/xpHTbFxBIWeTt6gxuFIhd4Gqq8USiNFa5IzE50/WpsCUoHdESw==",
   "success": true,
   "projectFilePath": "C:\\desafio-mobile\\Marvel\\MarvelUITest\\MarvelUITest.csproj",
   "expectedPackageFiles": [
     "C:\\Microsoft\\Xamarin\\NuGet\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\nunit3testadapter\\3.13.0\\nunit3testadapter.3.13.0.nupkg.sha512",
+    "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\opentk\\2.0.0\\opentk.2.0.0.nupkg.sha512",
+    "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\opentk.glcontrol\\1.1.2349.61993\\opentk.glcontrol.1.1.2349.61993.nupkg.sha512",
+    "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\plugin.multilingual\\1.1.6-beta\\plugin.multilingual.1.1.6-beta.nupkg.sha512",
+    "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.forms\\3.6.0.220655\\xamarin.forms.3.6.0.220655.nupkg.sha512",
+    "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.forms.pancakeview\\2.0.1.698\\xamarin.forms.pancakeview.2.0.1.698.nupkg.sha512",
+    "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.forms.platform.wpf\\3.6.0.220655\\xamarin.forms.platform.wpf.3.6.0.220655.nupkg.sha512",
     "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.uitest\\3.0.8-dev1\\xamarin.uitest.3.0.8-dev1.nupkg.sha512"
   ],
   "logs": []

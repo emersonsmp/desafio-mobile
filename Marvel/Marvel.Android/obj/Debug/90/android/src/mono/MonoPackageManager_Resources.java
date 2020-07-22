@@ -3,6 +3,10 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "Marvel.Android.dll" comes first in this list. */
 		"Marvel.Android.dll",
+		"FFImageLoading.dll",
+		"FFImageLoading.Forms.dll",
+		"FFImageLoading.Forms.Platform.dll",
+		"FFImageLoading.Platform.dll",
 		"FormsViewGroup.dll",
 		"Marvel.dll",
 		"Newtonsoft.Json.dll",

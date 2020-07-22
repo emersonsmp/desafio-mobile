@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Marvel.Behavior"
+             xmlns:page="clr-namespace:Marvel.View"
+             xmlns:ffimage="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             mc:Ignorable="d"
+             x:Class="Marvel.View.MainPageView"
+             Title="Marvel Heroes">
+    <ContentPage.Content>
+        <StackLayout x:Name="Stack" BackgroundColor="IndianRed">
+            
+            <Frame Margin="6,5,6,5" Padding="0" 
+                   OutlineColor="DarkGray" 
+                   HasShadow="True" HorizontalOptions="FillAndExpand"  
+                   VerticalOptions="Center">
+
+                <SearchBar x:Name="SearchBar" 
+                           AutomationId="SearchBar" 
+                           Placeholder="{Binding SearchBarText}" 
+                           PlaceholderColor="LightGray" 
+                           TextColor="#000000" 
+                           HorizontalOptions="FillAndExpand" 
+                           VerticalOptions="Center"
+                           Text="{Binding SearchText}"
+                           SearchCommand="{Binding SearchCommand}" 
+                           SearchCommandParameter="{Binding Text, Source={x:Reference SearchBar}}">
+                    <SearchBar.Behaviors>
+                        <local:TextChangedBehavior />
+                    </SearchBar.Behaviors>
+                </SearchBar>
+            </Frame>
+
+            <ActivityIndicator Grid.Row="1" x:Name="waitActivityIndicator"
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="CenterAndExpand"
+                                       Color="#ED1D24" IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}">
+            </ActivityIndicator>
+
+            <StackLayout IsVisible="{Binding HerosListIsNull}" HorizontalOptions="CenterAndExpand">
+                <Image Source="NotFound.png" HeightRequest="200"/>
+                <Label Text="Hulk não encontrar heroi" FontSize="25"/>
+            </StackLayout>
+
+            <StackLayout IsVisible="{Binding NoConnection}" HorizontalOptions="CenterAndExpand">
+                <Label Text="Você parece estar Offline" FontSize="25"/>
+                <Button Text="Refresh" Command="{ Binding RefreshListOfHerosCommand}" />
+            </StackLayout>
+
+
+            <ListView x:Name="ListaDeHeroes" ItemsSource="{Binding ListaDeHeroes}" RowHeight="100" IsVisible="{Binding ListViewIsVisible}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame Padding="5,2,5,2">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer 
+                                        Command="{Binding Path=BindingContext.MoreCharacterInfoComand, Source={x:Reference ListaDeHeroes}}" 
+                                        CommandParameter="{Binding .}"/>
+                                </Frame.GestureRecognizers>
+
+                                <Grid>
+                                    <ffimage:CachedImage
+                                        x:Name="HeroImage"
+                                        Aspect="AspectFill"
+                                        BackgroundColor="Transparent"
+                                        CacheDuration="3"
+                                        DownsampleToViewSize="False"
+                                        HeightRequest="24"
+                                        Source="{Binding thumbnail.path, StringFormat='{0}.jpg'}"
+                                        WidthRequest="36" />
+
+                                    <ActivityIndicator Color="Red" Scale="0.5" BindingContext="{x:Reference HeroImage}" IsRunning="{Binding IsLoading}"/>
+
+                                    <Label Text="{Binding name}" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" FontAttributes="Bold" FontSize="Large"/>
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

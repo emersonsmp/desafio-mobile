@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dCXMS7Vb/dZ5cBX4etlwCXca5BUnCMdbQkZCHLBAg3CM44bzkYTbSUbxmP+O6Tm1t0PsgsAdeqKUmG1b7SPK3g==",
+  "dgSpecHash": "W2OC/mUYkeYRGID/qRFz1NK8xWUuccRfsp61cV/YGEWI40KBp1fKqR2Mf1M4EMLMlGW9PgfV3zacd/vc4uQJIA==",
   "success": true,
   "projectFilePath": "C:\\desafio-mobile\\Marvel\\Marvel.iOS\\Marvel.iOS.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,10 @@
     "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\plugin.multilingual\\1.1.6-beta\\plugin.multilingual.1.1.6-beta.nupkg.sha512",
     "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\rg.plugins.popup\\2.0.0.3\\rg.plugins.popup.2.0.0.3.nupkg.sha512",
     "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\webp.touch\\1.0.8\\webp.touch.1.0.8.nupkg.sha512",
     "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.ffimageloading\\2.4.11.982\\xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
+    "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.ffimageloading.forms\\2.4.11.982\\xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512",
     "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.forms\\4.8.0.1143-pre1\\xamarin.forms.4.8.0.1143-pre1.nupkg.sha512",
     "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.forms.pancakeview\\2.0.1.698\\xamarin.forms.pancakeview.2.0.1.698.nupkg.sha512"
   ],

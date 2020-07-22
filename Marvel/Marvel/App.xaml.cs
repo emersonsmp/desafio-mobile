@@ -19,6 +19,7 @@ namespace Marvel
             AppCultureInfo = Preferences.Get("appLanguage", "en");
             AppResources.Culture = new CultureInfo(AppCultureInfo);
             CrossMultilingual.Current.CurrentCultureInfo = new CultureInfo(AppCultureInfo);
+
             MainPage = new NavigationPage(new SplashPage());
         }
 

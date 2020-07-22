@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "c7XI/eKhqn5ToUmEBPhfFJRS72WPoAIAX9s0sgIfWNdaogO/rB1R7Ea2V/FkmjJho2MZZzLRT39QgdxQYaWo+w==",
+  "dgSpecHash": "Qa/lEf7zaCPBNPbIbiznvhd2w7dWY1BK6jC9DE8ywGFw/tFZR0UeglGGlMPGC/Wo++6FMFyTRnZPlAJOEriUpw==",
   "success": true,
   "projectFilePath": "C:\\desafio-mobile\\Marvel\\Marvel.Android\\Marvel.Android.csproj",
   "expectedPackageFiles": [
@@ -46,6 +46,8 @@
     "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.android.support.versionedparcelable\\28.0.0.3\\xamarin.android.support.versionedparcelable.28.0.0.3.nupkg.sha512",
     "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.android.support.viewpager\\28.0.0.3\\xamarin.android.support.viewpager.28.0.0.3.nupkg.sha512",
     "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.ffimageloading\\2.4.11.982\\xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
+    "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.ffimageloading.forms\\2.4.11.982\\xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512",
     "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.forms\\4.8.0.1143-pre1\\xamarin.forms.4.8.0.1143-pre1.nupkg.sha512",
     "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.forms.pancakeview\\2.0.1.698\\xamarin.forms.pancakeview.2.0.1.698.nupkg.sha512"
   ],

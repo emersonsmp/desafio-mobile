@@ -18,7 +18,7 @@
 
                 <SearchBar x:Name="SearchBar" 
                            AutomationId="SearchBar" 
-                           Placeholder="Pesquisar item" 
+                           Placeholder="{Binding SearchBarText}" 
                            PlaceholderColor="LightGray" 
                            TextColor="#000000" 
                            HorizontalOptions="FillAndExpand" 

@@ -21,6 +21,9 @@
           "Marvel.dll": {}
         },
         "resources": {
+          "en/Marvel.resources.dll": {
+            "locale": "en"
+          },
           "pt/Marvel.resources.dll": {
             "locale": "pt"
           }

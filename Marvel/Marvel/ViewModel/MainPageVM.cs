@@ -11,6 +11,7 @@ using Xamarin.Essentials;
 using Marvel.View;
 using System.Linq;
 using Rg.Plugins.Popup.Extensions;
+using Marvel.Helpers;
 
 namespace Marvel.ViewModel
 {
@@ -21,14 +22,22 @@ namespace Marvel.ViewModel
         Characters characters { get; set; }
         public ObservableCollection<Result> Lista { get; set; }
         public Command RefreshListOfHerosCommand  { get; set; }
-
+        public string _SearchBarText;
+        public string SearchBarText {
+            get { return _SearchBarText; }
+            set
+            {
+                if (_SearchBarText != value)
+                {
+                    _SearchBarText = value;
+                    OnPropertyChanged("SearchBarText");
+                }
+            }
+        }
 
         public MainPageVM(MarvelDataService dataservice)
         {
-
-            /*if (!InternetConnectivity())
-                Navigation.PushPopupAsync(new InternetOfflinePage());*/
-
+            SearchBarText = TranslateExtension.TranslateText("SearchBarText");
             _dataService = dataservice;
             Lista = new ObservableCollection<Result>();
             ListaDeHeroes = new ObservableCollection<Result>();

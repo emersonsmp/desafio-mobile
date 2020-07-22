@@ -517,4 +517,5 @@ C:\desafio-mobile\Marvel\Marvel.Android\obj\Debug\90\android\assets\Plugin.Multi
 C:\desafio-mobile\Marvel\Marvel.Android\obj\Debug\90\android\assets\Plugin.Multilingual.dll
 C:\desafio-mobile\Marvel\Marvel.Android\obj\Debug\90\android\assets\Plugin.Multilingual.dll.mdb
 C:\desafio-mobile\Marvel\Marvel.Android\obj\Debug\90\android\assets\System.Globalization.dll
+C:\desafio-mobile\Marvel\Marvel.Android\bin\Debug\en\Marvel.resources.dll
 C:\desafio-mobile\Marvel\Marvel.Android\bin\Debug\pt\Marvel.resources.dll

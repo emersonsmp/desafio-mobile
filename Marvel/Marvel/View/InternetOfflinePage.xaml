@@ -57,7 +57,6 @@
                     BackgroundColor="Transparent"
                     HeightRequest="36"
                     HorizontalOptions="CenterAndExpand"
-                    VerticalOptions="Start"
                     WidthRequest="45"
                     Command="{Binding ClosePopUpCommand}"/>
 

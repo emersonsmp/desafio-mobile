@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="InternetMessageOffLine" xml:space="preserve">
-    <value>Atenção! Você está visualizando dados off-line que podem estar desatualizados. Quando reestabelecer sua conexão com a internet use a opção Atualizar.</value>
+    <value>Falha na conexão. Verifique sua conexão e tente novamente.</value>
+  </data>
+  <data name="SearchBarText" xml:space="preserve">
+    <value>Digite o nome do herói ...</value>
   </data>
 </root>

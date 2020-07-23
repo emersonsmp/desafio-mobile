@@ -123,7 +123,7 @@ public final class R {
 		public static final int top = 0x7f0800bf;
 	}
 	public static final class integer {
-		public static final int status_bar_notification_info_maxnum = 0x7f09000e;
+		public static final int status_bar_notification_info_maxnum = 0x7f090011;
 	}
 	public static final class layout {
 		public static final int browser_actions_context_menu_page = 0x7f0b001d;

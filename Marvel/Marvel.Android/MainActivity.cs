@@ -23,6 +23,7 @@ namespace Marvel.Droid
             Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
             CachedImageRenderer.Init(enableFastRenderer: true);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+            FormsControls.Droid.Main.Init(this);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
         }

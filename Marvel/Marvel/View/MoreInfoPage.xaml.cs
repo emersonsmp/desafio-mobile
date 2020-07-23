@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Marvel.ViewModel;
+using FormsControls.Base;
 
 namespace Marvel.View
 {
@@ -28,5 +29,7 @@ namespace Marvel.View
 
             await Navigation.PushModalAsync(new NavigationPage(imagePreview));
         }
+
+
     }
 }

@@ -29,13 +29,13 @@ public final class R {
 		public static final int design_appbar_state_list_animator = 0x7f020000;
 		public static final int design_fab_hide_motion_spec = 0x7f020001;
 		public static final int design_fab_show_motion_spec = 0x7f020002;
-		public static final int mtrl_btn_state_list_anim = 0x7f020003;
-		public static final int mtrl_btn_unelevated_state_list_anim = 0x7f020004;
-		public static final int mtrl_chip_state_list_anim = 0x7f020005;
-		public static final int mtrl_fab_hide_motion_spec = 0x7f020006;
-		public static final int mtrl_fab_show_motion_spec = 0x7f020007;
-		public static final int mtrl_fab_transformation_sheet_collapse_spec = 0x7f020008;
-		public static final int mtrl_fab_transformation_sheet_expand_spec = 0x7f020009;
+		public static final int mtrl_btn_state_list_anim = 0x7f0200e1;
+		public static final int mtrl_btn_unelevated_state_list_anim = 0x7f0200e2;
+		public static final int mtrl_chip_state_list_anim = 0x7f0200e3;
+		public static final int mtrl_fab_hide_motion_spec = 0x7f0200e4;
+		public static final int mtrl_fab_show_motion_spec = 0x7f0200e5;
+		public static final int mtrl_fab_transformation_sheet_collapse_spec = 0x7f0200e6;
+		public static final int mtrl_fab_transformation_sheet_expand_spec = 0x7f0200e7;
 	}
 	public static final class attr {
 		public static final int actionBarDivider = 0x7f030000;
@@ -1139,19 +1139,19 @@ public final class R {
 	public static final class integer {
 		public static final int abc_config_activityDefaultDur = 0x7f090000;
 		public static final int abc_config_activityShortDur = 0x7f090001;
-		public static final int app_bar_elevation_anim_duration = 0x7f090002;
-		public static final int bottom_sheet_slide_duration = 0x7f090003;
-		public static final int cancel_button_image_alpha = 0x7f090004;
-		public static final int config_tooltipAnimTime = 0x7f090005;
-		public static final int design_snackbar_text_max_lines = 0x7f090006;
-		public static final int design_tab_indicator_anim_duration_ms = 0x7f090007;
-		public static final int hide_password_duration = 0x7f090008;
-		public static final int mtrl_btn_anim_delay_ms = 0x7f090009;
-		public static final int mtrl_btn_anim_duration_ms = 0x7f09000a;
-		public static final int mtrl_chip_anim_duration = 0x7f09000b;
-		public static final int mtrl_tab_indicator_anim_duration_ms = 0x7f09000c;
-		public static final int show_password_duration = 0x7f09000d;
-		public static final int status_bar_notification_info_maxnum = 0x7f09000e;
+		public static final int app_bar_elevation_anim_duration = 0x7f090005;
+		public static final int bottom_sheet_slide_duration = 0x7f090006;
+		public static final int cancel_button_image_alpha = 0x7f090007;
+		public static final int config_tooltipAnimTime = 0x7f090008;
+		public static final int design_snackbar_text_max_lines = 0x7f090009;
+		public static final int design_tab_indicator_anim_duration_ms = 0x7f09000a;
+		public static final int hide_password_duration = 0x7f09000b;
+		public static final int mtrl_btn_anim_delay_ms = 0x7f09000c;
+		public static final int mtrl_btn_anim_duration_ms = 0x7f09000d;
+		public static final int mtrl_chip_anim_duration = 0x7f09000e;
+		public static final int mtrl_tab_indicator_anim_duration_ms = 0x7f09000f;
+		public static final int show_password_duration = 0x7f090010;
+		public static final int status_bar_notification_info_maxnum = 0x7f090011;
 	}
 	public static final class interpolator {
 		public static final int mtrl_fast_out_linear_in = 0x7f0a0000;

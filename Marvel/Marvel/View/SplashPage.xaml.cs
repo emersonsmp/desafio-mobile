@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FormsControls.Base;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,7 +32,7 @@ namespace Marvel.View
             }
             await SplashImage.ScaleTo(1.0, 200);
 
-            Application.Current.MainPage = new NavigationPage(new MainPageView()) { BarBackgroundColor = Color.DarkRed, BarTextColor = Color.White };
+            Application.Current.MainPage = new NavigationPage(new MainPageView()) { BarBackgroundColor = Color.DarkRed, BarTextColor = Color.White };          
         }
     }
 }

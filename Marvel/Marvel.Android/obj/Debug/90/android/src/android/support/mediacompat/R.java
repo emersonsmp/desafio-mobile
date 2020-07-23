@@ -108,8 +108,8 @@ public final class R {
 		public static final int title = 0x7f0800bb;
 	}
 	public static final class integer {
-		public static final int cancel_button_image_alpha = 0x7f090004;
-		public static final int status_bar_notification_info_maxnum = 0x7f09000e;
+		public static final int cancel_button_image_alpha = 0x7f090007;
+		public static final int status_bar_notification_info_maxnum = 0x7f090011;
 	}
 	public static final class layout {
 		public static final int notification_action = 0x7f0b0030;

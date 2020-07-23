@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Text;
 using System.Threading.Tasks;
 using Marvel.Model;
 using Marvel.Service;
 using Xamarin.Forms;
-using Xamarin.Essentials;
 using Marvel.View;
 using System.Linq;
 using Rg.Plugins.Popup.Extensions;
@@ -63,12 +59,10 @@ namespace Marvel.ViewModel
             Task.Run(LoadComics);
         }
 
-
         public Command MoreCharacterInfoComand => new Command<object>((object obj) =>
         {
             Result character = obj as Result;
-            App.Current.MainPage.Navigation.PushModalAsync(new MoreInfoView(character));
-
+            App.Current.MainPage.Navigation.PushAsync(new MoreInfoView(character));
         });
 
         public Command SearchCommand => new Command<string>((text) =>

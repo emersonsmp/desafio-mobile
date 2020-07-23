@@ -2,10 +2,7 @@
 using Marvel.Resources;
 using Plugin.Multilingual;
 using Rg.Plugins.Popup.Services;
-using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;

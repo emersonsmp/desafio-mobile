@@ -1,4 +1,5 @@
-﻿using Marvel.Service;
+﻿using Marvel.Model;
+using Marvel.Service;
 using Marvel.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -27,13 +28,10 @@ namespace Marvel.View
 
         protected override async void OnAppearing()
         {
-            //viewmodel.SubscribeChangeLanguage();
-            //wait viewModel.GetAll();
         }
 
         protected  override  void  OnDisappearing()
         {
-            //viewmodel.OnDisappearing();
         }
     }
 }

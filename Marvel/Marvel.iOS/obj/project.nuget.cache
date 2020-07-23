@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "W2OC/mUYkeYRGID/qRFz1NK8xWUuccRfsp61cV/YGEWI40KBp1fKqR2Mf1M4EMLMlGW9PgfV3zacd/vc4uQJIA==",
+  "dgSpecHash": "GhqmTomAq/qsprxYdmhfYhglFRIwZF2b8rFZ89/cXlIdWpVDy6QgunAAy3Bk10L0bF0mEXiQs9TKRtvGKF8hPg==",
   "success": true,
   "projectFilePath": "C:\\desafio-mobile\\Marvel\\Marvel.iOS\\Marvel.iOS.csproj",
   "expectedPackageFiles": [
@@ -13,7 +13,8 @@
     "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.ffimageloading\\2.4.11.982\\xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
     "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.ffimageloading.forms\\2.4.11.982\\xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512",
     "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.forms\\4.8.0.1143-pre1\\xamarin.forms.4.8.0.1143-pre1.nupkg.sha512",
-    "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.forms.pancakeview\\2.0.1.698\\xamarin.forms.pancakeview.2.0.1.698.nupkg.sha512"
+    "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xamarin.forms.pancakeview\\2.0.1.698\\xamarin.forms.pancakeview.2.0.1.698.nupkg.sha512",
+    "C:\\Users\\Emerson Sampaio\\.nuget\\packages\\xforms.plugin.animationnavigationpage\\1.0.8\\xforms.plugin.animationnavigationpage.1.0.8.nupkg.sha512"
   ],
   "logs": []
 }

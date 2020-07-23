@@ -7,6 +7,8 @@ public class MonoPackageManager_Resources {
 		"FFImageLoading.Forms.dll",
 		"FFImageLoading.Forms.Platform.dll",
 		"FFImageLoading.Platform.dll",
+		"FormsControls.Base.dll",
+		"FormsControls.Droid.dll",
 		"FormsViewGroup.dll",
 		"Marvel.dll",
 		"Newtonsoft.Json.dll",

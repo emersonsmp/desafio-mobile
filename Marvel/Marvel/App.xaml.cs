@@ -1,11 +1,11 @@
 ﻿using System;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 using Marvel.View;
 using Xamarin.Essentials;
 using Marvel.Resources;
 using System.Globalization;
 using Plugin.Multilingual;
+using FormsControls.Base;
 
 namespace Marvel
 {
@@ -20,7 +20,7 @@ namespace Marvel
             AppResources.Culture = new CultureInfo(AppCultureInfo);
             CrossMultilingual.Current.CurrentCultureInfo = new CultureInfo(AppCultureInfo);
 
-            MainPage = new NavigationPage(new SplashPage());
+            MainPage = new AnimationNavigationPage(new SplashPage());
         }
 
         protected override void OnStart()

@@ -24,6 +24,7 @@ namespace Marvel.iOS
         {
             Rg.Plugins.Popup.Popup.Init();
             CachedImageRenderer.Init();
+            FormsControls.Touch.Main.Init();
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 

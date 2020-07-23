@@ -123,4 +123,10 @@
   <data name="SearchBarText" xml:space="preserve">
     <value>Enter the hero's name ...</value>
   </data>
+  <data name="SelectionLanguage" xml:space="preserve">
+    <value>Select your language</value>
+  </data>
+  <data name="ThemeSelection" xml:space="preserve">
+    <value>Dark theme</value>
+  </data>
 </root>

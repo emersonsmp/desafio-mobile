@@ -550,3 +550,6 @@ C:\desafio-mobile\Marvel\Marvel.Android\obj\Debug\90\android\src\crc644bcdcf6d99
 C:\desafio-mobile\Marvel\Marvel.Android\obj\Debug\90\android\src\crc64b75d9ddab39d6c30\LRUCache.java
 C:\desafio-mobile\Marvel\Marvel.Android\obj\Debug\90\android\src\ffimageloading\cross\MvxCachedImageView.java
 C:\desafio-mobile\Marvel\Marvel.Android\obj\Debug\90\android\src\ffimageloading\views\ImageViewAsync.java
+C:\desafio-mobile\Marvel\Marvel.Android\obj\Debug\90\res\drawable\translate.png
+C:\desafio-mobile\Marvel\Marvel.Android\obj\Debug\90\res\drawable\flag_us.png
+C:\desafio-mobile\Marvel\Marvel.Android\obj\Debug\90\res\drawable\flag_br.png

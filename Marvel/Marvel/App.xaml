@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              x:Class="Marvel.App">
     <Application.Resources>
+        <ResourceDictionary Source="ThemeResources/LightTheme.xaml" />
         <Style x:Key="Frame" TargetType="Label">
             <Setter Property="TextColor" Value="IndianRed"/>
             <Setter Property="FontSize" Value="35"/>

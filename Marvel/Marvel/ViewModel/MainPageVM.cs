@@ -22,6 +22,7 @@ namespace Marvel.ViewModel
         Characters characters { get; set; }
         public ObservableCollection<Result> Lista { get; set; }
         public Command RefreshListOfHerosCommand  { get; set; }
+
         public string _SearchBarText;
         public string SearchBarText {
             get { return _SearchBarText; }
@@ -34,14 +35,31 @@ namespace Marvel.ViewModel
                 }
             }
         }
+       
+        public Command ShowChangeLanguagePagePopUpCommand { get; }
+
+        private bool _isTouched;
+        public bool IsTouched
+        {
+            get { return _isTouched; }
+            set
+            {
+                if (_isTouched != value)
+                {
+                    _isTouched = value;
+                    OnPropertyChanged("isTouched");
+                }
+            }
+        }
 
         public MainPageVM(MarvelDataService dataservice)
         {
-            SearchBarText = TranslateExtension.TranslateText("SearchBarText");
+            SearchBarText  = TranslateExtension.TranslateText("SearchBarText");
             _dataService = dataservice;
             Lista = new ObservableCollection<Result>();
             ListaDeHeroes = new ObservableCollection<Result>();
             RefreshListOfHerosCommand = new Command(RefreshListOfHerosExecute);
+            ShowChangeLanguagePagePopUpCommand = new Command(async () => await ExecuteShowChangeLanguagePagePopUpCommand());
             Task.Run(LoadComics);
         }
 
@@ -112,6 +130,16 @@ namespace Marvel.ViewModel
         public void RefreshListOfHerosExecute()
         {
 
+        }
+
+        private async Task ExecuteShowChangeLanguagePagePopUpCommand()
+        {
+            if (IsTouched)
+                return;
+
+            IsTouched = true;
+            await Navigation.PushPopupAsync(new ChangeLanguagePage());
+            IsTouched = false;
         }
     }
 }

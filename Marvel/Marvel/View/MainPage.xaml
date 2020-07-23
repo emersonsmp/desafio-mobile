@@ -9,6 +9,11 @@
              mc:Ignorable="d"
              x:Class="Marvel.View.MainPageView"
              Title="Marvel Heroes">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="lang" Command="{Binding ShowChangeLanguagePagePopUpCommand}" IconImageSource="Translate.png"/>
+    </ContentPage.ToolbarItems>
+    
     <ContentPage.Content>
         <StackLayout x:Name="Stack" BackgroundColor="IndianRed">
             

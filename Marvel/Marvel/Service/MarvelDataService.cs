@@ -11,8 +11,8 @@ namespace Marvel.Service
 {
     public class MarvelDataService : IMarvelDataService
     {
-        const string _API_PRIVATE_KEY = "4ec1042eaac4551902ef41b36100141d82400ffd";
-        const string _API_PUBLIC_KEY  = "cc0bf97cd028a24ef963842e9ad86f41";
+        const string _API_PRIVATE_KEY = "";
+        const string _API_PUBLIC_KEY  = "";
 
         readonly IHashService _hashService;
 

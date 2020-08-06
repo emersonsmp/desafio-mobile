@@ -40,30 +40,6 @@ namespace Marvel.Service
             //return await Task.Factory.StartNew(() => JsonConvert.DeserializeObject<IEnumerable<Characters>>(responseObject["data"]["results"].ToString()));
             var resposta = await Task.Factory.StartNew(() => JsonConvert.DeserializeObject<Characters>(responseObject.ToString()));
             return resposta;
-        }
-
-        /*public Characters GetHeroes(string orderBy = null)
-        {
-            int seriesId = 2029;
-            var ts = Guid.NewGuid().ToString();
-            var hash = _hashService.CreateMd5Hash(ts + _API_PRIVATE_KEY + _API_PUBLIC_KEY);
-
-            if (string.IsNullOrWhiteSpace(orderBy))
-                orderBy = "issueNumber";
-
-            var url =$@"https://gateway.marvel.com/v1/public/characters?apikey={_API_PUBLIC_KEY}&hash={hash}&ts={ts}";
-
-            //var url = $@"http://gateway.marvel.com/v1/public/series/{seriesId}/comics?orderBy={orderBy}&apikey={_API_PUBLIC_KEY}&hash={hash}&ts={ts}";
-
-            var client = new HttpClient();
-            var response = client.GetStringAsync(url).GetAwaiter().GetResult();
-
-            var responseObject = JObject.Parse(response);
-
-            //return await Task.Factory.StartNew(() => JsonConvert.DeserializeObject<IEnumerable<Characters>>(responseObject["data"]["results"].ToString()));
-            var resposta = JsonConvert.DeserializeObject<Characters>(responseObject.ToString());
-            return resposta;
-
-        }*/
+        }        
     }
 }
